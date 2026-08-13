@@ -81,7 +81,7 @@ npm run dev
 
 ## 배포 주소
 
-- 배포 주소: https://weatherly-skala-ie86sfhnk-leeseolhyuns-projects.vercel.app
+- 배포 주소: https://weatherly-skala-vue.vercel.app
 
 ## 실행 화면
 
