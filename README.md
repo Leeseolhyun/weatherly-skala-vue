@@ -81,7 +81,7 @@ npm run dev
 
 ## 배포 주소
 
-- 배포 주소: 배포 후 Vercel 또는 Netlify 주소를 여기에 작성
+- 배포 주소: https://weatherly-skala-ie86sfhnk-leeseolhyuns-projects.vercel.app
 
 ## 실행 화면
 
