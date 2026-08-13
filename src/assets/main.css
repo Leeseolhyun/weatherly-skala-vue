@@ -1,0 +1,57 @@
+@import './base.css';
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  background:
+    radial-gradient(circle at 90% 4%, rgba(248, 211, 113, 0.2), transparent 18%),
+    linear-gradient(135deg, #e5f5e9 0%, #f8fdf8 48%, #fffdf4 100%);
+}
+
+:root {
+  --el-color-primary: #318657;
+  --el-color-primary-light-3: #70ae89;
+  --el-color-primary-light-5: #9bc7aa;
+  --el-color-primary-light-7: #c8e3d0;
+  --el-color-primary-light-8: #daf0df;
+  --el-color-primary-light-9: #edf9ef;
+  --el-color-success: #4c9a65;
+}
+
+.el-button--primary {
+  --el-button-bg-color: #33865a;
+  --el-button-border-color: #33865a;
+  --el-button-hover-bg-color: #4a9f6c;
+  --el-button-hover-border-color: #4a9f6c;
+  --el-button-active-bg-color: #276e47;
+  --el-button-active-border-color: #276e47;
+}
+
+#app {
+  width: min(1280px, calc(100% - 48px));
+  margin: 0 auto;
+  padding: 32px 0;
+  font-weight: normal;
+}
+
+a,
+.green {
+  text-decoration: none;
+  color: #287847;
+  transition: 0.4s;
+  padding: 3px;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: rgba(63, 152, 97, 0.14);
+  }
+}
+
+@media (max-width: 640px) {
+  #app {
+    width: min(100% - 24px, 1280px);
+    padding: 16px 0;
+  }
+}

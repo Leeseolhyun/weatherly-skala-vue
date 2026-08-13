@@ -1,0 +1,415 @@
+/* 1. 전체 최외곽 컨테이너 레벨 정의 */
+.app-container {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 24px 40px 40px;
+  background: rgba(255, 255, 255, 0.94);
+  border: 1px solid rgba(137, 191, 150, 0.52);
+  border-radius: 24px;
+  box-shadow: 0 16px 36px rgba(52, 103, 68, 0.12);
+  font-family:
+    'Pretendard',
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    Roboto,
+    sans-serif;
+  color: #284535;
+}
+/* 2. 대주제 (h1) 및 구분선 (hr) 정돈 */
+.app-header {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  margin: 2px 0 14px;
+}
+
+.brand-group {
+  flex: 0 0 auto;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #287b49;
+  font-size: 1.65rem;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  text-decoration: none;
+}
+
+.app-header p {
+  margin: 0;
+  color: #718576;
+  font-size: 0.92rem;
+}
+
+.site-search {
+  display: flex;
+  align-items: center;
+  width: min(100%, 450px);
+  min-width: 260px;
+  height: 44px;
+  margin-left: auto;
+  padding: 3px 4px 3px 16px;
+  border: 2px solid #49a768;
+  border-radius: 999px;
+  background: #fff;
+  box-shadow: 0 5px 16px rgba(46, 127, 73, 0.1);
+  transition: box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.site-search:focus-within {
+  border-color: #247d47;
+  box-shadow: 0 6px 19px rgba(46, 127, 73, 0.18);
+}
+
+.site-search input {
+  width: 100%;
+  padding: 6px 0;
+  border: 0;
+  outline: none;
+  color: #355d43;
+  font-size: 14px;
+}
+
+.site-search input::placeholder {
+  color: #91a896;
+}
+
+.site-search button {
+  display: grid;
+  width: 34px;
+  height: 34px;
+  flex: 0 0 auto;
+  place-items: center;
+  border: 0;
+  border-radius: 50%;
+  background: #348958;
+  color: #fff;
+  cursor: pointer;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 1;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.site-search button:hover {
+  background: #247547;
+  transform: scale(1.06);
+}
+
+.header-tools {
+  display: flex;
+  align-items: center;
+  flex: 0 0 auto;
+}
+
+.search-message {
+  margin: -5px 0 12px auto;
+  color: #bd6a35;
+  font-size: 12px;
+  text-align: right;
+}
+
+.app-container h2 {
+  margin: 32px 0 16px;
+  color: #2e553c;
+}
+
+.assignment-divider {
+  margin-top: 48px;
+}
+/* hr */
+.app-container hr {
+  border: none;
+  border-top: 2px solid #e9ecef;
+  margin-bottom: 24px;
+}
+/* 세션 대제목 (h1) 스타일링 */
+h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #1a252f;
+  margin-top: 40px;
+  margin-bottom: 8px;
+}
+
+.navigation-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  background: linear-gradient(90deg, #ecf8ed, #fafff9 62%, #fffcef);
+  padding: 16px 20px;
+  border: 1px solid #d3e9d8;
+  border-radius: 18px;
+  box-shadow: 0 5px 14px rgba(66, 123, 83, 0.08);
+  margin-bottom: 28px;
+}
+.nav-item {
+  text-decoration: none;
+  color: #45664f;
+  font-weight: bold;
+  font-size: 15px;
+  white-space: nowrap;
+  transition: color 0.2s ease, background-color 0.2s ease;
+}
+.nav-item:hover {
+  color: #267747;
+  background-color: #dff2e4;
+}
+.divider {
+  margin: 0 2px;
+  color: #b5cfba;
+}
+
+/* 🔥 Vue Router가 활성화된 링크 태그에 자동으로 부여하는 클래스 스펙 */
+.navigation-bar .router-link-exact-active {
+  color: #28834d;
+  border-bottom: 2px solid #43a665;
+  padding-bottom: 2px;
+}
+
+.quick-menu {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+  margin: -14px 0 28px;
+}
+
+.quick-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+  padding: 11px 12px;
+  border: 1px solid #d9ebdd;
+  border-radius: 16px;
+  background: #fbfffb;
+  box-shadow: 0 5px 13px rgba(61, 116, 77, 0.05);
+  color: #496b53;
+  text-decoration: none;
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.quick-link:hover {
+  border-color: #9ac9a7;
+  background: #f3fbf4;
+  box-shadow: 0 8px 17px rgba(61, 116, 77, 0.1);
+  transform: translateY(-3px);
+}
+
+.quick-icon {
+  display: grid;
+  width: 34px;
+  height: 34px;
+  flex: 0 0 auto;
+  place-items: center;
+  border-radius: 50%;
+  background: #e6f5e9;
+  font-size: 17px;
+}
+
+.quick-link span:last-child {
+  display: grid;
+  min-width: 0;
+}
+
+.quick-link strong {
+  overflow: hidden;
+  color: #326345;
+  font-size: 13px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.quick-link small {
+  overflow: hidden;
+  margin-top: 2px;
+  color: #8aa18f;
+  font-size: 11px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.dashboard-wrapper {
+  width: min(100%, 960px);
+  margin: 0 auto;
+}
+
+.page-heading {
+  width: min(100%, 960px);
+  margin: 0 auto 24px;
+  padding: 22px 24px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #ecf8ef, #fffdf1);
+  border: 1px solid #d7eadb;
+}
+
+.page-heading h2 {
+  margin: 4px 0 8px;
+}
+
+.page-heading p {
+  margin: 0;
+  color: #587363;
+}
+
+.eyebrow {
+  color: #2d8b51 !important;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+}
+
+.assignment-section {
+  margin-bottom: 44px;
+}
+
+.assignment-section > h3 {
+  width: min(100%, 960px);
+  margin: 0 auto 12px;
+  color: #34495e;
+}
+.search-box,
+.list-box {
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #e9ecef;
+}
+
+.sensitivity-box,
+.recommend-box {
+  padding: 15px;
+  margin-bottom: 15px;
+  border: 1px solid #ffe0a3;
+  border-radius: 8px;
+  background: #fff7e6;
+}
+
+.sensitivity-box input {
+  width: 70px;
+  margin: 0 6px;
+}
+
+.recommend-box {
+  border-color: #b9ddf5;
+  background: #edf7ff;
+}
+
+.recommend-box ul {
+  margin: 8px 0 0;
+  padding-left: 20px;
+}
+
+.travel-tip {
+  margin: 10px 0 0;
+  color: #286090;
+  font-weight: bold;
+}
+input {
+  padding: 8px;
+  width: 90%;
+  font-size: 14px;
+}
+.weather-card {
+  background: linear-gradient(135deg, #ffffff, #f6fcf7);
+  border: 1px solid #d6e8da;
+  padding: 14px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  position: relative;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.weather-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(69, 123, 83, 0.12);
+}
+.badge {
+  display: inline-block;
+  padding: 4px 8px;
+  font-size: 12px;
+  border-radius: 4px;
+  color: #fff;
+}
+.hot {
+  background-color: #ff7675;
+}
+.muggy {
+  background-color: #a56b2b;
+}
+.cool {
+  background-color: #74b9ff;
+}
+.packing-title {
+  margin: 12px 0 4px;
+  font-weight: bold;
+}
+.packing-list {
+  margin: 0;
+  padding-left: 20px;
+}
+.btn-detail {
+  position: absolute;
+  right: 12px;
+  top: 15px;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+.status-bar {
+  background: #e9f8ef;
+  padding: 10px;
+  text-align: center;
+  color: #2e7d32;
+  font-weight: bold;
+  border-radius: 6px;
+}
+
+@media (max-width: 640px) {
+  .app-container {
+    padding: 24px 18px;
+  }
+
+  .navigation-bar {
+    justify-content: flex-start;
+    padding: 14px;
+  }
+
+  .app-header {
+    display: block;
+  }
+
+  .app-header p {
+    margin-top: 4px;
+  }
+
+  .site-search {
+    width: 100%;
+    min-width: 0;
+    margin: 14px 0 10px;
+  }
+
+  .header-tools {
+    justify-content: flex-end;
+    margin-bottom: 12px;
+  }
+
+  .search-message {
+    margin: -6px 0 12px;
+    text-align: left;
+  }
+
+  .divider {
+    display: none;
+  }
+
+  .quick-menu {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
